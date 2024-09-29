@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #c9d6ff;
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container,
+.sign-up {
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  max-width: 100%;
+  min-height: 480px;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #512da8;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #512da8;
+  color: #fff;
+  border-color: #512da8;
+}
+
+span {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  background-color: #f1f1f1;
+  border: none;
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  background-color: #e6e6e6;
+}
+
+button {
+  background-color: #512da8;
+  color: #fff;
+  padding: 12px 45px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #5c6bc0;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: #555;
+}
+
+p a {
+  color: #512da8;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .social-icons a {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  input {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 13px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+}
